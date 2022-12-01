@@ -16,4 +16,16 @@ tasks {
     wrapper {
         gradleVersion = "7.6"
     }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+//tasks.test {
+//    useJUnitPlatform()
+//}
+
+dependencies {
+    implementation(kotlin("test"))
 }
